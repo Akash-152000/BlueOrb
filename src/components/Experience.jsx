@@ -66,9 +66,9 @@ const Experience = () => {
       {/*--------heading for experinece section-------------*/}
       <motion.div variants={textVariant
         ()}>
-        <p className={styles.sectionSubText}>What we`ve done so far </p>
+        <p className={styles.sectionSubText}>What we know and</p>
         {/*-----heading---------- */}
-        <h2 className={styles.sectionHeadText}>Our Accompishments</h2>
+        <h2 className={styles.sectionHeadText}>What we excel at..</h2>
       </motion.div>
 
       {/*---------vertical timeline-------- */}

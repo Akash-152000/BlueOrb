@@ -15,10 +15,19 @@ import {
     git,
     figma,
     docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
+    devlopment,
+    fullstack2,
+    native,
+    // meta,
+    // starbucks,
+    // tesla,
+    // shopify,
+    asthetic,
+    agency,
+    aqua,
+    booksnbarbell,
+    rooms,
+    showtime,
     carrent,
     jobit,
     tripguide,
@@ -37,6 +46,18 @@ import {
     {
       id: "contact",
       title: "Contact",
+    },
+    {
+      name: "devlopment",
+      icon: devlopment,
+    },
+    {
+      name: "fullstack2",
+      icon: fullstack2,
+    },
+    {
+      name: "native ",
+      icon: native ,
     },
   ];
   
@@ -57,6 +78,7 @@ import {
       title: "Content Creator",
       icon: creator,
     },
+ 
   ];
   
   const technologies = [
@@ -112,15 +134,28 @@ import {
       name: "docker",
       icon: docker,
     },
+    // {
+    //   name: "devlopment",
+    //   icon: devlopment,
+    // },
+    // {
+    //   name: "fullstack2",
+    //   icon: fullstack2,
+    // },
+    // {
+    //   name: "native ",
+    //   icon: native ,
+    // },
+  
   ];
   
   const experiences = [
     {
       title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
+      // company_name: "Starbucks",
+      icon: reactjs,
       iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      // date: "March 2020 - April 2021",
       points: [
         "Developing and maintaining web applications using React.js and other related technologies.",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -130,10 +165,10 @@ import {
     },
     {
       title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
+      // company_name: "Tesla",
+      icon: native,
       iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
+      // date: "Jan 2021 - Feb 2022",
       points: [
         "Developing and maintaining web applications using React.js and other related technologies.",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -143,10 +178,10 @@ import {
     },
     {
       title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
+      // company_name: "Shopify",
+      icon: devlopment,
       iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
+      // date: "Jan 2022 - Jan 2023",
       points: [
         "Developing and maintaining web applications using React.js and other related technologies.",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -156,10 +191,10 @@ import {
     },
     {
       title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
+      // company_name: "Meta",
+      icon: fullstack2,
       iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
+      // date: "Jan 2023 - Present",
       points: [
         "Developing and maintaining web applications using React.js and other related technologies.",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -198,7 +233,7 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "roomsandshrooms",
       description:
         "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
       tags: [
@@ -215,11 +250,15 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
+      image: rooms,
+
+      link:"https://roomsandshrooms.online/",
+      
       source_code_link: "https://github.com/",
     },
+
     {
-      name: "Job IT",
+      name: "Showtimescoop",
       description:
         "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
       tags: [
@@ -236,11 +275,15 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
+      image: showtime,
+
+      link:"https://showtimescoop.in/",
+
       source_code_link: "https://github.com/",
     },
+
     {
-      name: "Trip Guide",
+      name: "aqua agency",
       description:
         "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
       tags: [
@@ -257,7 +300,83 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
+      image: aqua,
+      link:"https://aaquapurifierservices.com/",
+      source_code_link: "https://github.com/",
+    },
+
+    {
+      name: "asthetic",
+      description:
+        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      tags: [
+        {
+          name: "nextjs",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "supabase",
+          color: "green-text-gradient",
+        },
+        {
+          name: "css",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: asthetic,
+
+      link:"https://simplyaesthetic.shop//",
+
+      source_code_link: "https://github.com/",
+    },
+
+    {
+      name: "agency",
+      description:
+        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      tags: [
+        {
+          name: "nextjs",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "supabase",
+          color: "green-text-gradient",
+        },
+        {
+          name: "css",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: agency,
+
+      link:"https://desiginingagency.online/",
+
+      source_code_link: "https://github.com/",
+    },
+
+    {
+      name: "booksnbarbell",
+      description:
+        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      tags: [
+        {
+          name: "react",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "supabase",
+          color: "green-text-gradient",
+        },
+        {
+          name: "css",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: booksnbarbell,
+
+      link:"https://booksnbarbells.in/",
+
       source_code_link: "https://github.com/",
     },
   ];

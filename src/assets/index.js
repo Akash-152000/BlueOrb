@@ -20,18 +20,34 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
-
+import fullstack2 from '../images/fullstack2.jpg';
+import native from '../images/native.png';
+import devlopment from  '../images/devlopment.png';
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
-
+import asthetic from '../images/aesthetic.png'
+import agency from '../images/agency.png'
+import aqua from '../images/aqua.png'
+import booksnbarbell from '../images/booksnbarbells.png'
+import rooms from '../images/rooms.png'
+import showtime from '../images/showtime.png'
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
 export {
+  asthetic,
+  agency,
+  aqua,
+  booksnbarbell,
+  rooms,
+  showtime,
   logo,
+  fullstack2,
+  native ,
+  devlopment,
   backend,
   creator,
   mobile,
