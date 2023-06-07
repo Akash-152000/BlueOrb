@@ -10,9 +10,9 @@ import { slideIn } from "../utils/motion";
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
-    name: "",
-    email: "",
-    message: "",
+    name: '',
+    email: '',
+    message: '',
   });
 
   const [loading, setLoading] = useState(false);
@@ -31,28 +31,31 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
 
-    emailjs
-      .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+    emailjs.send(
+      /*service id  */
+       'service_r0jcplm',
+    /*-----template id */
+       'template_1t76uxq',
         {
           from_name: form.name,
-          to_name: "JavaScript Mastery",
+          to_name: "shivang",
           from_email: form.email,
-          to_email: "sujata@jsmastery.pro",
+          to_email: "shivangtiwari7011@gmail.com",
           message: form.message,
         },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+
+         'jqq9AvwIuSjoMiASc'
       )
+
       .then(
         () => {
           setLoading(false);
           alert("Thank you. I will get back to you as soon as possible.");
 
           setForm({
-            name: "",
-            email: "",
-            message: "",
+            name: '',
+            email: '',
+            message: '',
           });
         },
         (error) => {
@@ -64,6 +67,8 @@ const Contact = () => {
       );
     
   };
+
+
 
   return (
     <div
