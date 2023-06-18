@@ -1,7 +1,6 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
-
 import { styles } from "../style";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
@@ -10,9 +9,9 @@ import { slideIn } from "../utils/motion";
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
-    name: '',
-    email: '',
-    message: '',
+    name: "",
+    email: "",
+    message: "",
   });
 
   const [loading, setLoading] = useState(false);
@@ -22,20 +21,26 @@ const Contact = () => {
     const { name, value } = target;
 
     setForm({
-      ...form,
+      ...form, 
       [name]: value,
     });
   };
 
+
+
   const handleSubmit = (e) => {
+    //to prevent the browser from refreshing  
     e.preventDefault();
+    //to enable the sending of mail
     setLoading(true);
 
-    emailjs.send(
+    emailjs
+    .send(
       /*service id  */
-       'service_r0jcplm',
+      'service_tybh8xj',
     /*-----template id */
-       'template_1t76uxq',
+       'template_gxszdhh',
+    
         {
           from_name: form.name,
           to_name: "shivang",
@@ -43,8 +48,8 @@ const Contact = () => {
           to_email: "shivangtiwari7011@gmail.com",
           message: form.message,
         },
-
-         'jqq9AvwIuSjoMiASc'
+        
+         'L7K18swGH6hwOd0AN'
       )
 
       .then(
@@ -65,8 +70,10 @@ const Contact = () => {
           alert("Ahh, something went wrong. Please try again.");
         }
       );
-    
   };
+
+
+
 
 
 

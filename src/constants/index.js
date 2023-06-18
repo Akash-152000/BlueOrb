@@ -235,13 +235,13 @@ import {
     {
       name: "roomsandshrooms",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
         },
-        {
+        { 
           name: "mongodb",
           color: "green-text-gradient",
         },
@@ -260,7 +260,7 @@ import {
     {
       name: "Showtimescoop",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "Web application that enables users to search for movies.",
       tags: [
         {
           name: "react",
@@ -285,7 +285,7 @@ import {
     {
       name: "aqua agency",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "Web application that enables users to search services for purifiers.",
       tags: [
         {
           name: "nextjs",
@@ -308,7 +308,7 @@ import {
     {
       name: "asthetic",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "Web application that enables users to search and buy cloths.",
       tags: [
         {
           name: "nextjs",
@@ -333,7 +333,7 @@ import {
     {
       name: "agency",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "Web application that provides small scale business digital platform.",
       tags: [
         {
           name: "nextjs",
@@ -358,7 +358,7 @@ import {
     {
       name: "booksnbarbell",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "Web application that enables people to look for books.",
       tags: [
         {
           name: "react",

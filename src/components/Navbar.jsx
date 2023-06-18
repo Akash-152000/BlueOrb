@@ -46,8 +46,8 @@ const Navbar = () => {
         >
           <img src={logo2} alt='logo' className='w-9 h-9 object-contain' />
           <p className='text-white text-[18px] font-bold cursor-pointer flex '>
-           RedOrb {/**&nbsp; ----unicode space character*/}
-            <span className='sm:block hidden'> |Devlopmen</span>
+           Orb {/**&nbsp; ----unicode space character*/}
+            <span className='sm:block hidden'> |Devlopment</span>
           </p>
         </Link>
 
@@ -96,14 +96,14 @@ const Navbar = () => {
 
 
 
-            {/*---------------for placing the navbar contenbt -------- */}
+            {/*---------------for placing the navbar content -------- */}
             <ul className='list-none flex justify-end items-start flex-1 flex-col gap-4'>
               {navLinks.map((nav) => (
                 <li
                   key={nav.id}
                   className={`font-poppins font-medium cursor-pointer text-[16px] ${active === nav.title ? "text-white" : "text-secondary"
                     }`}
-                    //------to manually ----open and close ut----//
+                    //------for highlighting the section we are in small devices ----//
                   onClick={() => {
                     setToggle(!toggle);
                     setActive(nav.title);
@@ -113,6 +113,8 @@ const Navbar = () => {
                 </li>
               ))}
             </ul>
+
+            
           </div>
         </div>
       </div>
