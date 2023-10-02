@@ -46,7 +46,7 @@ const Navbar = () => {
         >
           <img src={logo2} alt='logo' className='w-9 h-9 object-contain' />
           <p className='text-white text-[18px] font-bold cursor-pointer flex '>
-           Orb {/**&nbsp; ----unicode space character*/}
+            BlueOrb {/**&nbsp; ----unicode space character*/}
             <span className='sm:block hidden'> |Devlopment</span>
           </p>
         </Link>
