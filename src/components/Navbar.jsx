@@ -2,8 +2,11 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { styles } from '../style';
 import { navLinks } from "../constants";
-import {menu, close } from "../assets";
+import { menu, close } from "../assets";
 import earth from "../assets/earth.png"
+import { motion } from "framer-motion";
+import { EarthCanvas } from "./canvas";
+import { slideIn } from "../utils/motion";
 const Navbar = () => {
 
   //-----------------------------states------------------------//
@@ -44,7 +47,14 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={earth} alt='logo' className='w-[50px] h-[50px] object-contain ml-[30px]'  />
+          {/* <motion.div
+            variants={slideIn("right", "tween", 0.2, 1)}
+            className='xl:flex-1 xl:h-auto md:h-[50px] h-[50px]'
+          >
+            <EarthCanvas />
+          </motion.div> */}
+          <img src={earth} alt='logo' className='w-[50px] h-[50px] object-contain ml-[30px]' />
+
 
           <p className='text-white text-[18px] font-bold cursor-pointer flex '>
             BlueOrb {/**&nbsp; ----unicode space character*/}
@@ -79,14 +89,14 @@ const Navbar = () => {
         {/** -----------------------navbar for small divices--------------- */}
         <div className='sm:hidden flex flex-1 justify-end items-center'>
           <img
-          //----to open and close the menu bar---//
+            //----to open and close the menu bar---//
             src={toggle ? close : menu}
             alt='menu'
             className='w-[28px] h-[28px] object-contain'
             //------------------to change the state when clicked ----//
             onClick={() => setToggle(!toggle)}
           />
-           {/**------for showing the nabvbarcontent------- in small screen ------- */}
+          {/**------for showing the nabvbarcontent------- in small screen ------- */}
 
 
 
@@ -104,7 +114,7 @@ const Navbar = () => {
                   key={nav.id}
                   className={`font-poppins font-medium cursor-pointer text-[16px] ${active === nav.title ? "text-white" : "text-secondary"
                     }`}
-                    //------for highlighting the section we are in small devices ----//
+                  //------for highlighting the section we are in small devices ----//
                   onClick={() => {
                     setToggle(!toggle);
                     setActive(nav.title);
@@ -115,7 +125,7 @@ const Navbar = () => {
               ))}
             </ul>
 
-            
+
           </div>
         </div>
       </div>
