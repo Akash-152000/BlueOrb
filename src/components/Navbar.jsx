@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { styles } from '../style';
 import { navLinks } from "../constants";
 import {menu, close } from "../assets";
-import logo2 from "../assets/BlueOrb.png"
+import earth from "../assets/earth.png"
 const Navbar = () => {
 
   //-----------------------------states------------------------//
@@ -44,8 +44,8 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo2} alt='logo' className='w-[50px] h-[50px] object-contain ml-[30px]'  />
-          
+          <img src={earth} alt='logo' className='w-[50px] h-[50px] object-contain ml-[30px]'  />
+
           <p className='text-white text-[18px] font-bold cursor-pointer flex '>
             BlueOrb {/**&nbsp; ----unicode space character*/}
             {/* <span className='sm:block hidden'> |Devlopment</span> */}
