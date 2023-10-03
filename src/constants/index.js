@@ -17,7 +17,7 @@ import {
     docker,
     devlopment,
     fullstack2,
-    native,
+    wordpress,
     // meta,
     // starbucks,
     // tesla,
@@ -28,6 +28,8 @@ import {
     booksnbarbell,
     rooms,
     showtime,
+    inck,
+    alpha,
     carrent,
     jobit,
     tripguide,
@@ -57,7 +59,7 @@ import {
     },
     {
       name: "native ",
-      icon: native ,
+      icon: wordpress ,
     },
   ];
   
@@ -152,7 +154,7 @@ import {
   
   const experiences = [
     {
-      title: "React.js Developer",
+      title: "React.js Devlopment",
       // company_name: "Starbucks",
       icon: reactjs,
       iconBg: "#383E56",
@@ -165,42 +167,42 @@ import {
       ],
     },
     {
-      title: "React Native Developer",
+      title: "WordPress Development",
       // company_name: "Tesla",
-      icon: native,
+      icon: wordpress,
       iconBg: "#E6DEDD",
       // date: "Jan 2021 - Feb 2022",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+        "Developing websites for medium and small businesses using Wordpress CMS",
+        "Setting up online store, Donation page or use of different plugins and themes we got it all covered.",
         "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+      
       ],
     },
+    // {
+    //   title: "Backend Development",
+    //   // company_name: "Shopify",
+    //   icon: devlopment,
+    //   iconBg: "#383E56",
+    //   // date: "Jan 2022 - Jan 2023",
+    //   points: [
+    //     "We provide Api development services for businesses who already have frontend",
+    //     "We use NodeJs to create our",
+    //     "Implementing responsive design and ensuring cross-browser compatibility.",
+    //     "Participating in code reviews and providing constructive feedback to other developers.",
+    //   ],
+    // },
     {
-      title: "Web Developer",
-      // company_name: "Shopify",
-      icon: devlopment,
-      iconBg: "#383E56",
-      // date: "Jan 2022 - Jan 2023",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Full stack Developer",
+      title: "Full stack Development",
       // company_name: "Meta",
       icon: fullstack2,
       iconBg: "#E6DEDD",
       // date: "Jan 2023 - Present",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Need a complete web application for your business, we got you covered.",
+        "Our team specailizes in creating web applications for all types of businesses using latest technologies ",
+        "UI/UX, Authentication, Authorization, Optimization and many more would be implemented from our side, without you having to worry about dealing with technical problems",
+        
       ],
     },
   ];
@@ -233,35 +235,81 @@ import {
   ];
   
   const projects = [
+    // {
+    //   name: "roomsandshrooms",
+    //   description:
+    //     "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    //   tags: [
+    //     {
+    //       name: "react",
+    //       color: "blue-text-gradient",
+    //     },
+    //     { 
+    //       name: "mongodb",
+    //       color: "green-text-gradient",
+    //     },
+    //     {
+    //       name: "tailwind",
+    //       color: "pink-text-gradient",
+    //     },
+    //   ],
+    //   image: rooms,
+
+    //   link:"https://roomsandshrooms.online/",
+      
+    //   source_code_link: "https://github.com/",
+    // },
+
     {
-      name: "roomsandshrooms",
+      name: "INCK Foundation",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "Thane based NGO which works for providing free education to poor and special children, helping Women, providing medical support to needy",
       tags: [
         {
-          name: "react",
+          name: "wordpress",
           color: "blue-text-gradient",
         },
-        { 
-          name: "mongodb",
+        {
+          name: "ngo",
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "elementor",
           color: "pink-text-gradient",
         },
       ],
-      image: rooms,
+      image: inck,
 
-      link:"https://roomsandshrooms.online/",
-      
-      source_code_link: "https://github.com/",
+      link:"https://inckfoundation.org/",
+
     },
+    {
+      name: "Alpha-Modern",
+      description:
+        "Kanpur based company which provides wholesale rates to local vendors and Kirana shops using their mobile app",
+      tags: [
+        {
+          name: "HTML",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "CSS",
+          color: "green-text-gradient",
+        },
+        {
+          name: "JavaScript",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: alpha,
 
+      link:"https://alpha-modern.in/",
+
+    },
     {
       name: "Showtimescoop",
       description:
-        "Web application that enables users to search for movies.",
+        "Applications where user could register and search for the movies they like and get information about them and add them to their favourite list.",
       tags: [
         {
           name: "react",

@@ -21,7 +21,7 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 import fullstack2 from '../images/fullstack2.jpg';
-import native from '../images/native.png';
+import wordpress from '../images/wordpress.png';
 import devlopment from  '../images/devlopment.png';
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -33,6 +33,8 @@ import aqua from '../images/aqua.png'
 import booksnbarbell from '../images/booksnbarbells.png'
 import rooms from '../images/rooms.png'
 import showtime from '../images/showtime.png'
+import inck from '../images/Inck.png'
+import alpha from '../images/alpha.png'
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
@@ -44,9 +46,11 @@ export {
   booksnbarbell,
   rooms,
   showtime,
+  inck,
+  alpha,
   logo,
   fullstack2,
-  native ,
+  wordpress ,
   devlopment,
   backend,
   creator,
