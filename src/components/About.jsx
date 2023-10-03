@@ -56,7 +56,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        we`are a group of skilled software devlopers with experience in Typescrypt and JavaScript, and experties in framworks like
+        we are a group of skilled software devlopers with experience in Typescrypt and JavaScript, and experties in framworks like
         React,Node.js,and three.js. we collaborate closely with clients to create efficient,scalable,and user-friendly solutions that solve real-world problems.let`s work together to bring your ideas to life
       </motion.p>
 
