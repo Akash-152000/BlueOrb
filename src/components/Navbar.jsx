@@ -109,6 +109,7 @@ const Navbar = () => {
 
             {/*---------------for placing the navbar content -------- */}
             <ul className='list-none flex justify-end items-start flex-1 flex-col gap-4'>
+              {console.log(navLinks)}
               {navLinks.map((nav) => (
                 <li
                   key={nav.id}

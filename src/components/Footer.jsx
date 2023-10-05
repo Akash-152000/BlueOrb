@@ -11,7 +11,7 @@ const Footer = () => {
         </div>
         <div className='w-full flex justify-center'>
           <Link to="/privacy-policy">
-          <div className='cursor-pointer'>Privacy Policy</div>
+          <div className='cursor-pointer hover:shadow-myhover transition duration-300 ease-in-out p-4 rounded-lg'>Privacy Policy</div>
           </Link>
         </div>
         <div className='flex flex-col border-l w-full items-center'>

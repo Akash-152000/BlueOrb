@@ -51,14 +51,17 @@ import {
       title: "Contact",
     },
     {
+      id:"development",
       name: "devlopment",
       icon: devlopment,
     },
     {
+      id:"fullstack2",
       name: "fullstack2",
       icon: fullstack2,
     },
     {
+      id:"native",
       name: "native ",
       icon: wordpress ,
     },
@@ -66,20 +69,20 @@ import {
   
   const services = [
     {
-      title: "Frontend Developer",
+      title: "Frontend Development",
       icon: web,
     },
     {
-      title: "Backend Developer",
+      title: "Backend Development",
       icon: backend,
     },
     {
-      title: "WordPress Developer",
+      title: "WordPress Development",
       icon: mobile,
     },
     
     {
-      title: "Content Creator",
+      title: "Content Creation",
       icon: creator,
     },
  
