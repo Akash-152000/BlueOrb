@@ -29,6 +29,7 @@ import {
     rooms,
     showtime,
     inck,
+    wavestar,
     alpha,
     carrent,
     jobit,
@@ -307,9 +308,33 @@ import {
 
     },
     {
+      name: "Wavestar Automation",
+      description:
+        "Mumbai based Home Automation business that automates their households as per their needs",
+      tags: [
+        {
+          name: "Wordpress",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "automation",
+          color: "green-text-gradient",
+        },
+        {
+          name: "elementor",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: wavestar,
+
+      link:"https://aaquaman.com/",
+
+      source_code_link: "https://github.com/",
+    },
+    {
       name: "Showtimescoop",
       description:
-        "Applications where user could register and search for the movies they like and get information about them and add them to their favourite list.",
+        "Applications where user could register and search for the movies they like and get information about them and add them to their",
       tags: [
         {
           name: "react",
@@ -354,30 +379,30 @@ import {
       source_code_link: "https://github.com/",
     },
 
-    {
-      name: "asthetic",
-      description:
-        "Web application that enables users to search and buy cloths.",
-      tags: [
-        {
-          name: "nextjs",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "supabase",
-          color: "green-text-gradient",
-        },
-        {
-          name: "css",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: asthetic,
+    // {
+    //   name: "asthetic",
+    //   description:
+    //     "Web application that enables users to search and buy cloths.",
+    //   tags: [
+    //     {
+    //       name: "nextjs",
+    //       color: "blue-text-gradient",
+    //     },
+    //     {
+    //       name: "supabase",
+    //       color: "green-text-gradient",
+    //     },
+    //     {
+    //       name: "css",
+    //       color: "pink-text-gradient",
+    //     },
+    //   ],
+    //   image: asthetic,
 
-      link:"https://simplyaesthetic.shop//",
+    //   link:"https://simplyaesthetic.shop//",
 
-      source_code_link: "https://github.com/",
-    },
+    //   source_code_link: "https://github.com/",
+    // },
 
     {
       name: "agency",

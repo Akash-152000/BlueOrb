@@ -34,6 +34,7 @@ import booksnbarbell from '../images/booksnbarbells.png'
 import rooms from '../images/rooms.png'
 import showtime from '../images/showtime.png'
 import inck from '../images/Inck.png'
+import wavestar from '../images/wavestar.png'
 import alpha from '../images/alpha.png'
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -47,6 +48,7 @@ export {
   rooms,
   showtime,
   inck,
+  wavestar,
   alpha,
   logo,
   fullstack2,
