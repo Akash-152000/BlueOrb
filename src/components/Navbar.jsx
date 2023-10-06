@@ -4,9 +4,9 @@ import { styles } from '../style';
 import { navLinks } from "../constants";
 import { menu, close } from "../assets";
 import earth from "../assets/earth.png"
-import { motion } from "framer-motion";
-import { EarthCanvas } from "./canvas";
-import { slideIn } from "../utils/motion";
+// import { motion } from "framer-motion";
+// import { EarthCanvas } from "./canvas";
+// import { slideIn } from "../utils/motion";
 const Navbar = () => {
 
   //-----------------------------states------------------------//

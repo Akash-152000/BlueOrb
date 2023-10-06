@@ -22,18 +22,18 @@ import {
     // starbucks,
     // tesla,
     // shopify,
-    asthetic,
+    // asthetic,
     agency,
     aqua,
     booksnbarbell,
-    rooms,
+    // rooms,
     showtime,
     inck,
     wavestar,
     alpha,
-    carrent,
-    jobit,
-    tripguide,
+    // carrent,
+    // jobit,
+    // tripguide,
     threejs,
   } from "../assets";
   
@@ -158,6 +158,7 @@ import {
   
   const experiences = [
     {
+      id:1,
       title: "React.js Devlopment",
       // company_name: "Starbucks",
       icon: reactjs,
@@ -171,6 +172,7 @@ import {
       ],
     },
     {
+      id:2,
       title: "WordPress Development",
       // company_name: "Tesla",
       icon: wordpress,
@@ -197,6 +199,7 @@ import {
     //   ],
     // },
     {
+      id:3,
       title: "Full stack Development",
       // company_name: "Meta",
       icon: fullstack2,
