@@ -17,7 +17,7 @@ const Footer = () => {
         <div className='flex flex-col border-l w-full items-center'>
           <span className='text-3xl font-bold'>Contact us:</span>
           <span>akash@blueorb.in</span>
-          <span>9326977987</span>
+          <span>+91-9326977987</span>
         </div>
       </div>
     </>

@@ -39,29 +39,29 @@ import {
   
   export const navLinks = [
     {
-      id: "about",
+      id: 1,
       title: "About",
     },
     {
-      id: "work",
+      id: 2,
       title: "Work",
     },
     {
-      id: "contact",
+      id: 3,
       title: "Contact",
     },
     {
-      id:"development",
+      id:4,
       name: "devlopment",
       icon: devlopment,
     },
     {
-      id:"fullstack2",
+      id:5,
       name: "fullstack2",
       icon: fullstack2,
     },
     {
-      id:"native",
+      id:6,
       name: "native ",
       icon: wordpress ,
     },
