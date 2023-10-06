@@ -21,17 +21,17 @@ const Hero = () => {
             Hi, we are <span className='text-[#915EFF]'>BlueOrb</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100 z-40`}>
-            We develop 3D visuals, user <br className='sm:block hidden' />
-            interfaces and web applications
+            We develop User
+            interfaces and <br className='sm:block hidden' /> web applications
           </p>
         </div>
       </div>
       <div className='h-[20px]'>
 
       </div>
-      
-        {/* <ComputersCanvas /> */}
-   
+
+      {/* <ComputersCanvas /> */}
+
 
       {/*---for scroll sign------ */}
       <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
