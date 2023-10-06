@@ -63,13 +63,13 @@ const Navbar = () => {
         </Link>
 
         <ul className='list-none hidden sm:flex flex-row gap-10'>
-          {navLinks.map((nav) => (
+          {navLinks.map((nav,index) => (
 
             <li
 
               //------ for hover effect of navbar---//
               //-----start-------//
-              key={Link.id}
+              key={index}
               className={`${active === Link.title ? "text-white" : "text-secondary"
                 } hover:text-white text-[18px] font-medium cursor-pointer`}
 
