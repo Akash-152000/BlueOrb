@@ -30,7 +30,7 @@ const Hero = () => {
 
       </div>
       
-        <ComputersCanvas />
+        {/* <ComputersCanvas /> */}
    
 
       {/*---for scroll sign------ */}

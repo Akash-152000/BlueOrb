@@ -45,13 +45,13 @@ const ExperienceCard = ({ experience }) =>
       </p>
 
       {/*----------------for the points--------*/}
-      <ul className='mt-5 list-disc ml-5 space-y-2'>
-        {experience.points.map((point, index) => (
-          <li key={index} className='text-white-100 text-[14px] pl-1  tracking-wider'>
-            {point}
-          </li>
-        ))}
-      </ul>
+      <ul className='mt-5 list-disc ml-5 space-y-2'> 
+      {experience.points.map((point,index) =>(
+     <li key={index} className='text-white-100 text-[14px] pl-1  tracking-wider'>
+  {point}
+     </li>
+      ))}
+   </ul>
 
 
     </div>
@@ -77,9 +77,7 @@ const Experience = () => {
         <VerticalTimeline>
           {experiences.map((experience, index) => (
             /*----return a experiencecard for each one -------- */
-            <div key={index}>
-              <ExperienceCard  experience={experience} />
-            </div>
+            <ExperienceCard key={index} experience={experience} />
           ))}
 
 
