@@ -19,9 +19,9 @@ const ProjectCard = ({
   link,
 }) => {
   return (
-    /*----for animation------- */
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
-      {/**------for the cards-----*/}
+
+    // <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+
       <Tilt
         option={{
           max: 45,
@@ -30,19 +30,11 @@ const ProjectCard = ({
         }}
         className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
       >
+        
         {/*---for placing the content inside the cards  */}
         <div className="relative w-full h-[230px]">
           <LazyLoadImage className="w-full h-full object-cover rounded-2xl" src={image} alt={name} />
-          {/* <img
-            src={image}
-            alt={name}
-            
-          ></img> */}
 
-          {/**-----for placing the github icon */}
-          {/* <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
-        
-          </div> */}
         </div>
         {/*-------discription of the projects----- */}
         <div className="mt-5">
@@ -70,33 +62,36 @@ const ProjectCard = ({
           ))}
         </div>
       </Tilt>
-    </motion.div>
+    // </motion.div>
   );
 };
 
 const Works = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
+      {/* <motion.div variants={textVariant()}> */}
+  
         <p className={styles.sectionSubText}>Our work</p>
         {/*-----heading---------- */}
         <h2 className={styles.sectionHeadText}>What we have done so far..</h2>
-      </motion.div>
+      {/* </motion.div> */}
 
       <div className="w-full flex">
-        <motion.div
+        sc
+        {/* <motion.div
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
-        >
+        > */}
           Following projects showcases our skills and experience through
           real-world examples of our work. Each project is briefly described
           with links to code repositories and live demos in it. It reflects our
           ability to solve complex problems, work with different technologies,
           and manage projects effectively.
-        </motion.div>
+        {/* </motion.div> */}
       </div>
 
       <div className="mt-20 flex flex-wrap gap-7">
+        <p>fgjklkjh</p>
         {/*-----looping----- */}
         {projects.map((project, index) => (
           <ProjectCard
