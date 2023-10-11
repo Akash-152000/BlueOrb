@@ -9,7 +9,7 @@ const Tech = () => {
 
       {technologies.map((technology, index) =>
         /*----name of the balls------*/
-      (<div className='w-28 h-28' key={index}>
+      (<div className='lg:w-28 lg:h-28 w-18 h-18' key={index}>
 
       <BallCanvas icon={technology.icon}/>
 

@@ -62,7 +62,7 @@ const BallCanvas = ({ icon }) => {
           <Ball imgUrl={icon} />
         </Suspense>
         <Preload all />
-      </Canvas> : <><img src={icon} alt="tect-icon" /></>}
+      </Canvas> : <><img src={icon} width={50} height={50} alt="tect-icon" /></>}
     </>
 
   )
