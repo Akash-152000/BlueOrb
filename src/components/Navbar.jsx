@@ -7,7 +7,7 @@ import earth from "../assets/earth.png"
 // import { motion } from "framer-motion";
 // import { EarthCanvas } from "./canvas";
 // import { slideIn } from "../utils/motion";
-const Navbar = () => {
+const Navbar = ({ scrollToAboutComponent, scrollToWorkComponent, scrollToContactComponent }) => {
 
   //-----------------------------states------------------------//
   const [active, setActive] = useState("");
@@ -16,6 +16,11 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   const [scrolled, setScrolled] = useState(false);
+
+  // const scrollToComponent = () => {
+  //   console.log(props.aboutRef);
+  //   props.aboutRef.current.scrollIntoView({ behavior: "smooth" });
+  // };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -47,12 +52,6 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          {/* <motion.div
-            variants={slideIn("right", "tween", 0.2, 1)}
-            className='xl:flex-1 xl:h-auto md:h-[50px] h-[50px]'
-          >
-            <EarthCanvas />
-          </motion.div> */}
           <img src={earth} alt='logo' className='w-[50px] h-[50px] object-contain ml-[30px]' />
 
 
@@ -63,7 +62,7 @@ const Navbar = () => {
         </Link>
 
         <ul className='list-none hidden sm:flex flex-row gap-10'>
-          {navLinks.map((nav,index) => (
+          {navLinks.map((nav, index) => (
 
             <li
 
@@ -73,20 +72,20 @@ const Navbar = () => {
               className={`${active === Link.title ? "text-white" : "text-secondary"
                 } hover:text-white text-[18px] font-medium cursor-pointer`}
 
-              //----for giving path tothe navbar elemnet-------//
+              //----for giving path to the navbar element-------//
 
               onClick={() => setActive(Link.title)}
 
             //--------------end-------------//
             >
+              {nav.title === "About" ? <p onClick={scrollToAboutComponent}>{nav.title}</p> : nav.title === "Work" ? <p onClick={scrollToWorkComponent}>{nav.title}</p> : <p onClick={scrollToContactComponent}>{nav.title}</p>}
 
-              <a href={`#${nav.id}`}>{nav.title}</a>
             </li>
           ))}
         </ul>
 
 
-        {/** -----------------------navbar for small divices--------------- */}
+        {/** -----------------------navbar for small devices--------------- */}
         <div className='sm:hidden flex flex-1 justify-end items-center'>
           <img
             //----to open and close the menu bar---//

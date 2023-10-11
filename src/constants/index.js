@@ -15,7 +15,7 @@ import {
     git,
     figma,
     docker,
-    devlopment,
+    // devlopment,
     fullstack2,
     wordpress,
     // meta,
@@ -23,9 +23,9 @@ import {
     // tesla,
     // shopify,
     // asthetic,
-    agency,
-    aqua,
-    booksnbarbell,
+    // agency,
+    // aqua,
+    // booksnbarbell,
     // rooms,
     showtime,
     inck,
@@ -50,21 +50,21 @@ import {
       id: 3,
       title: "Contact",
     },
-    {
-      id:4,
-      name: "devlopment",
-      icon: devlopment,
-    },
-    {
-      id:5,
-      name: "fullstack2",
-      icon: fullstack2,
-    },
-    {
-      id:6,
-      name: "native ",
-      icon: wordpress ,
-    },
+    // {
+    //   id:4,
+    //   name: "devlopment",
+    //   icon: devlopment,
+    // },
+    // {
+    //   id:5,
+    //   name: "fullstack2",
+    //   icon: fullstack2,
+    // },
+    // {
+    //   id:6,
+    //   name: "native ",
+    //   icon: wordpress ,
+    // },
   ];
   
   const services = [

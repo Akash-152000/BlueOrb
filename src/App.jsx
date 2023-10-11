@@ -1,11 +1,22 @@
 
-import { useEffect } from 'react';
-import { About, Contact, Experience, Hero, Navbar, Tech, Works, Footer, Privacy } from './components';
+import { useEffect, useRef } from 'react';
+import { About, Contact, Experience, Hero, Navbar, Tech, Works, Footer } from './components';
 import StarsCanvas from './components/canvas/Stars';
 
 function App() {
+  const aboutRef = useRef();
+  const workRef = useRef();
+  const contactRef = useRef();
 
-
+  const scrollToAboutComponent = () => {
+    aboutRef.current?.scrollIntoView({ behavior: 'smooth' });
+  };
+  const scrollToWorkComponent = () => {
+    workRef.current?.scrollIntoView({ behavior: 'smooth' });
+  };
+  const scrollToContactComponent = () => {
+    contactRef.current?.scrollIntoView({ behavior: 'smooth' });
+  };
 
   useEffect(() => {
     // Create a link element for the stylesheet
@@ -30,14 +41,18 @@ function App() {
 
     <div className='relative z-0 bg-primary'>
       <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
-        <Navbar />
+        <Navbar scrollToAboutComponent={scrollToAboutComponent} scrollToWorkComponent={scrollToWorkComponent} scrollToContactComponent={scrollToContactComponent} />
         <Hero />
       </div>
-      <About />
+      <div ref={aboutRef}>
+        <About />
+      </div>
       <Experience />
       <Tech />
-      <Works />
-      <div className='relative z-0  '>
+      <div ref={workRef}>
+        <Works />
+      </div>
+      <div className='relative z-0  ' ref={contactRef}>
         <Contact />
         <StarsCanvas />
       </div>
