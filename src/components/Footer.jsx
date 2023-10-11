@@ -13,7 +13,10 @@ const Footer = (props) => {
     <>
       <div className='h-[300px] lg:flex justify-around items-center '>
         <div className='border-r w-full flex justify-center'>
-          <img src={earth} alt='logo' className='w-[100px] h-[100px] object-contain  ' />
+          {props.whichPage==="home"?<img onClick={handleScrollToTop} src={earth} alt='logo' className='w-[100px] h-[100px] object-contain cursor-pointer ' />:<Link to="/">
+            <img onClick={handleScrollToTop} src={earth} alt='logo' className='w-[100px] h-[100px] object-contain cursor-pointer ' />
+          </Link>}
+          
         </div>
         <div className='w-full flex justify-center'>
           {props.whichPage === "privacy" ? <><Link to="/">
