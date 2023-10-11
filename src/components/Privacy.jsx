@@ -434,7 +434,7 @@ const Privacy = () => {
             </div>
           </div>
         </div>
-        <Footer />
+        <Footer whichPage="privacy"/>
       </div>
     </div>
   )

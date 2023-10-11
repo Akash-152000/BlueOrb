@@ -57,7 +57,7 @@ function App() {
         <StarsCanvas />
       </div>
       <div>
-        <Footer />
+        <Footer whichPage="home"/>
       </div>
     </div>
   );

@@ -126,7 +126,8 @@ const Navbar = ({ whichPage, scrollToAboutComponent, scrollToWorkComponent, scro
 
 
             </div>
-          </div></> : <></>}
+          </div></> : <Link to="/">
+          <p>Home</p></Link>}
 
       </div>
     </nav>
