@@ -362,28 +362,28 @@ import {
       source_code_link: "https://github.com/",
     },
 
-    {
-      name: "aqua agency",
-      description:
-        "Web application that enables users to search services for purifiers.",
-      tags: [
-        {
-          name: "nextjs",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "supabase",
-          color: "green-text-gradient",
-        },
-        {
-          name: "css",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: aqua,
-      link:"https://aaquapurifierservices.com/",
-      source_code_link: "https://github.com/",
-    },
+    // {
+    //   name: "aqua agency",
+    //   description:
+    //     "Web application that enables users to search services for purifiers.",
+    //   tags: [
+    //     {
+    //       name: "nextjs",
+    //       color: "blue-text-gradient",
+    //     },
+    //     {
+    //       name: "supabase",
+    //       color: "green-text-gradient",
+    //     },
+    //     {
+    //       name: "css",
+    //       color: "pink-text-gradient",
+    //     },
+    //   ],
+    //   image: aqua,
+    //   link:"https://aaquapurifierservices.com/",
+    //   source_code_link: "https://github.com/",
+    // },
 
     // {
     //   name: "asthetic",
@@ -410,55 +410,55 @@ import {
     //   source_code_link: "https://github.com/",
     // },
 
-    {
-      name: "agency",
-      description:
-        "Web application that provides small scale business digital platform.",
-      tags: [
-        {
-          name: "nextjs",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "supabase",
-          color: "green-text-gradient",
-        },
-        {
-          name: "css",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: agency,
+    // {
+    //   name: "agency",
+    //   description:
+    //     "Web application that provides small scale business digital platform.",
+    //   tags: [
+    //     {
+    //       name: "nextjs",
+    //       color: "blue-text-gradient",
+    //     },
+    //     {
+    //       name: "supabase",
+    //       color: "green-text-gradient",
+    //     },
+    //     {
+    //       name: "css",
+    //       color: "pink-text-gradient",
+    //     },
+    //   ],
+    //   image: agency,
 
-      link:"https://desiginingagency.online/",
+    //   link:"https://desiginingagency.online/",
 
-      source_code_link: "https://github.com/",
-    },
+    //   source_code_link: "https://github.com/",
+    // },
 
-    {
-      name: "booksnbarbell",
-      description:
-        "Web application that enables people to look for books.",
-      tags: [
-        {
-          name: "react",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "supabase",
-          color: "green-text-gradient",
-        },
-        {
-          name: "css",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: booksnbarbell,
+    // {
+    //   name: "booksnbarbell",
+    //   description:
+    //     "Web application that enables people to look for books.",
+    //   tags: [
+    //     {
+    //       name: "react",
+    //       color: "blue-text-gradient",
+    //     },
+    //     {
+    //       name: "supabase",
+    //       color: "green-text-gradient",
+    //     },
+    //     {
+    //       name: "css",
+    //       color: "pink-text-gradient",
+    //     },
+    //   ],
+    //   image: booksnbarbell,
 
-      link:"https://booksnbarbells.in/",
+    //   link:"https://booksnbarbells.in/",
 
-      source_code_link: "https://github.com/",
-    },
+    //   source_code_link: "https://github.com/",
+    // },
   ];
   
   export { services, technologies, experiences, testimonials, projects };
