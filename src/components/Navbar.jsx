@@ -7,7 +7,7 @@ import earth from "../assets/earth.png"
 // import { motion } from "framer-motion";
 // import { EarthCanvas } from "./canvas";
 // import { slideIn } from "../utils/motion";
-const Navbar = ({ scrollToAboutComponent, scrollToWorkComponent, scrollToContactComponent }) => {
+const Navbar = ({ whichPage, scrollToAboutComponent, scrollToWorkComponent, scrollToContactComponent }) => {
 
   //-----------------------------states------------------------//
   const [active, setActive] = useState("");
@@ -61,7 +61,7 @@ const Navbar = ({ scrollToAboutComponent, scrollToWorkComponent, scrollToContact
           </p>
         </Link>
 
-        <ul className='list-none hidden sm:flex flex-row gap-10'>
+        {whichPage === "home" ? <><ul className='list-none hidden sm:flex flex-row gap-10'>
           {navLinks.map((nav, index) => (
 
             <li
@@ -85,48 +85,49 @@ const Navbar = ({ scrollToAboutComponent, scrollToWorkComponent, scrollToContact
         </ul>
 
 
-        {/** -----------------------navbar for small devices--------------- */}
-        <div className='sm:hidden flex flex-1 justify-end items-center'>
-          <img
-            //----to open and close the menu bar---//
-            src={toggle ? close : menu}
-            alt='menu'
-            className='w-[28px] h-[28px] object-contain'
-            //------------------to change the state when clicked ----//
-            onClick={() => setToggle(!toggle)}
-          />
-          {/**------for showing the nabvbarcontent------- in small screen ------- */}
+          {/** -----------------------navbar for small devices--------------- */}
+          <div className='sm:hidden flex flex-1 justify-end items-center'>
+            <img
+              //----to open and close the menu bar---//
+              src={toggle ? close : menu}
+              alt='menu'
+              className='w-[28px] h-[28px] object-contain'
+              //------------------to change the state when clicked ----//
+              onClick={() => setToggle(!toggle)}
+            />
+            {/**------for showing the nabvbarcontent------- in small screen ------- */}
 
 
 
-          <div
-            className={`${!toggle ? "hidden" : "flex"
-              } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
-          >
+            <div
+              className={`${!toggle ? "hidden" : "flex"
+                } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
+            >
 
 
 
-            {/*---------------for placing the navbar content -------- */}
-            <ul className='list-none flex justify-end items-start flex-1 flex-col gap-4'>
-              {navLinks.map((nav) => (
-                <li
-                  key={nav.id}
-                  className={`font-poppins font-medium cursor-pointer text-[16px] ${active === nav.title ? "text-white" : "text-secondary"
-                    }`}
-                  //------for highlighting the section we are in small devices ----//
-                  onClick={() => {
-                    setToggle(!toggle);
-                    setActive(nav.title);
-                  }}
-                >
-                  <a key={nav.id} href={`#${nav.id}`}>{nav.title}</a>
-                </li>
-              ))}
-            </ul>
+              {/*---------------for placing the navbar content -------- */}
+              <ul className='list-none flex justify-end items-start flex-1 flex-col gap-4'>
+                {navLinks.map((nav) => (
+                  <li
+                    key={nav.id}
+                    className={`font-poppins font-medium cursor-pointer text-[16px] ${active === nav.title ? "text-white" : "text-secondary"
+                      }`}
+                    //------for highlighting the section we are in small devices ----//
+                    onClick={() => {
+                      setToggle(!toggle);
+                      setActive(nav.title);
+                    }}
+                  >
+                    <a key={nav.id} href={`#${nav.id}`}>{nav.title}</a>
+                  </li>
+                ))}
+              </ul>
 
 
-          </div>
-        </div>
+            </div>
+          </div></> : <></>}
+
       </div>
     </nav>
   );

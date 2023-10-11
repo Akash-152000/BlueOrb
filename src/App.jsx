@@ -41,7 +41,7 @@ function App() {
 
     <div className='relative z-0 bg-primary'>
       <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
-        <Navbar scrollToAboutComponent={scrollToAboutComponent} scrollToWorkComponent={scrollToWorkComponent} scrollToContactComponent={scrollToContactComponent} />
+        <Navbar whichPage="home" scrollToAboutComponent={scrollToAboutComponent} scrollToWorkComponent={scrollToWorkComponent} scrollToContactComponent={scrollToContactComponent} />
         <Hero />
       </div>
       <div ref={aboutRef}>
