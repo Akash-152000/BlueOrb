@@ -333,7 +333,7 @@ import {
       ],
       image: wavestar,
 
-      link:"https://aaquaman.com/",
+      link:"https://wavestar.in/",
 
       source_code_link: "https://github.com/",
     },
